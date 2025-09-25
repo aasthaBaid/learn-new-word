@@ -77,7 +77,7 @@ function App() {
     const fetchWordsForDate = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`http://localhost:3001/api/words/${selectedDate}`);
+        const response = await axios.get(`https://learn-english-backend-mu.vercel.app/api/words/${selectedDate}`);
         setWords(response.data);
         setError(null);
       } catch (err) {
