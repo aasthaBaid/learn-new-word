@@ -54,7 +54,7 @@ function App() {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/history');
+        const response = await axios.get('https://learn-english-backend-mu.vercel.app//api/history');
         const availableDates = response.data;
         setDates(availableDates);
         if (availableDates.length > 0) {
